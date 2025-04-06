@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>JS Form Challenge</title>
-    <h1 class="title">JS Form Challenge</h1>
-    <form>
-        <label for="fname"></label>
-        <input type="text" id="fname" name="fname" value="First name">
-        <label for="lname"></label>
-        <input type="text" id="lname" name="lname" value="Last name">
-        <br>
-        <textarea name="comments" id="comments"></textarea><br>
-        Subscribe to newsletter<input type="checkbox"></input><br>
-        <label for="email" class="email"></label>
-        <input type="email" value='Enter your email'><br>
-        <input type="submit" value="Submit">
+    <form id="form-wrapper" name="form-wrapper">
+        <h1 class="title">JS Form Challenge</h1>
+        <div>
+            <label for="fname"></label>
+            <input type="text" id="fname" name="fname" placeholder="First Name">
+            <label for="lname"></label>
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+            <br/>
+            <br/>
+        </div>
+        <div>
+            <textarea name="comments" id="comments"></textarea>
+            <br/>
+            <br/>
+        </div>
+        <div>
+            <label>Subscribe to newsletter</label>
+            <input type="checkbox"></input><br/>    
+            <label for="email" class="email"></label>
+            <input id=email type="email" placeholder='Enter your email'>
+            <br/>
+            <br/>
+        </div>
+        <div>    
+            <input id='submit' type="submit" value="Submit" disabled="true">
+        </div>    
     </form>
 </head>
 <body>
